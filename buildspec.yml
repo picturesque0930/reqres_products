@@ -4,7 +4,7 @@ env:
   variables:
     IMAGE_REPO_NAME: "admin16-products"
     _PROJECT_NAME: "admin16-products"
-
+    
 phases:
   install:
     runtime-versions:
@@ -93,10 +93,7 @@ phases:
                       timeoutSeconds: 2
                       periodSeconds: 5
                       failureThreshold: 5
-
-
-    EOF
-
+          EOF
 cache:
   paths:
     - '/root/.m2/**/*'
